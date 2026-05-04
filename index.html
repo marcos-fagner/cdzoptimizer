@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CDZ Optimizer – Otimização Rápida pelo AnyDesk</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #0f1a2e;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: normal;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    /* Estilo da página inicial com links */
+    #home {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    #home h2 {
+      margin-top: 0;
+      color: #0f1a2e;
+      border-bottom: 2px solid #0f1a2e;
+      padding-bottom: 0.3rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0.5rem;
+    }
+
+    .btn-dono {
+      background: #0077b6;
+    }
+    .btn-cdz {
+      background: #0f1a2e;
+    }
+
+    /* Seção do "Conheça o Dono" */
+    #secao-dono {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    #secao-dono h2 {
+      margin-top: 0;
+      color: #0f1a2e;
+      border-bottom: 2px solid #0f1a2e;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Seção "Conheça a CDZ Optimizer" */
+    #secao-cdz {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #f0f8ff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    #secao-cdz h2 {
+      margin-top: 0;
+      color: #0f1a2e;
+      border-bottom: 2px solid #0f1a2e;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Outras seções */
+    .section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #0f1a2e;
+      border-bottom: 2px solid #0f1a2e;
+      padding-bottom: 0.3rem;
+    }
+
+    .pricing {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .plan {
+      flex: 1 1 250px;
+      text-align: center;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .plan h3 {
+      margin-top: 0;
+      color: #0f1a2e;
+    }
+    .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #e63946;
+    }
+    .fineprint {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+
+    .redes-sociais {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+    .redes-sociais a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+    .whatsapp {
+      background: #25d366;
+    }
+    .discord {
+      background: #7289da;
+    }
+    .instagram {
+      background: #e1306c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #0f1a2e;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CDZ Optimizer</h1>
+    <p>Consulta remota para deixar seu PC estável, rápido e com melhor desempenho no FPS.</p>
+  </header>
+
+  <main>
+    <!-- Página inicial com links -->
+    <section id="home">
+      <h2>Bem‑vindo ao CDZ Optimizer</h2>
+      <p>Escolha abaixo para conhecer o dono do serviço ou a própria CDZ Optimizer.</p>
+
+      <a href="#secao-dono" class="btn-link btn-dono">Conheça o Dono (Marcos)</a>
+      <a href="#secao-cdz" class="btn-link btn-cdz">Conheça a CDZ Optimizer</a>
+    </section>
+
+    <!-- Seção Conheça o Dono -->
+    <section id="secao-dono" class="section">
+      <h2>Conheça o Dono</h2>
+      <p>Meu nome é <strong>Marcos</strong> e eu sou responsável pelo CDZ Optimizer. Moro em uma cidade pequena do Ceará e, além de estudar, tenho dedicado minhas horas ao aprofundamento em computadores e jogos competitivos.</p>
+      <p>Meu foco principal é entender o comportamento do PC em jogos, identificar gargalos e aplicar ajustes que deixam o sistema mais estável, rápido e eficiente. Com isso, posso melhorar o desempenho do FPS e da responsividade geral do computador sem precisar formatar ou instalar programas complexos.</p>
+      <p>Como <strong>Dono/Otimizador</strong> do CDZ Optimizer, meu compromisso é trazer resultados claros ao cliente, explicando o que foi feito e deixando o sistema mais consistente para o dia a dia.</p>
+    </section>
+
+    <!-- Seção Conheça a CDZ Optimizer -->
+    <section id="secao-cdz" class="section">
+      <h2>Conheça a CDZ Optimizer</h2>
+      <p>A <strong>CDZ Optimizer</strong> é um serviço de otimização remota voltado para quem busca mais estabilidade no FPS, melhor desempenho no jogo e maior rapidez no uso geral do PC.</p>
+      <p>Trabalho diretamente no computador da pessoa por meio do AnyDesk, ajustando configurações de energia, GPU, inicialização de programas e serviços em segundo plano, tudo com foco em manter o sistema leve e reativo.</p>
+      <p>Meu objetivo é oferecer uma solução simples, acessível e segura para quem quer aproveitar ao máximo o seu PC, sejam para jogos competitivos, estudo ou trabalho, sem precisar mexer em configurações avançadas sozinho.</p>
+    </section>
+
+    <!-- Seções principais -->
+    <section class="section">
+      <h2>O que é o CDZ Optimizer?</h2>
+      <p>O <strong>CDZ Optimizer</strong> é um serviço de otimização rápida feito<strong> diretamente no seu computador</strong>, por meio de uma consulta remota via <strong>AnyDesk</strong>. Sem você precisar formatar ou instalar programas complexos, eu acesso seu PC de forma segura e aplico ajustes que deixam o sistema mais limpo, estável e rápido.</p>
+      <p>Funciona para quem joga, trabalha em softwares pesados ou simplesmente quer um PC mais responsivo no dia a dia.</p>
+    </section>
+
+    <section class="section">
+      <h2>Estabilidade no FPS</h2>
+      <p>Se você joga jogos como <strong>Fortnite, Minecraft PvP, CS2</strong> ou outros títulos competitivos, o foco é manter o <strong>FPS mais estável</strong> e evitar quedas bruscas que atrapalham seu desempenho.</p>
+      <p>Na consulta, ajusto:</p>
+      <ul>
+        <li>Configurações de energia e GPU para priorizar desempenho.</li>
+        <li>Processos e serviços em segundo plano que consomem CPU e RAM.</li>
+        <li>Configurações do jogo e do Windows que interferem na fluidez.</li>
+      </ul>
+      <p>O resultado costuma ser uma curva de FPS mais reta, com menos “stutters” e melhor resposta nos momentos críticos.</p>
+    </section>
+
+    <section class="section">
+      <h2>Auto‑desempenho do sistema</h2>
+      <p>“Auto‑desempenho” aqui significa que o seu PC passa a se sustentar melhor sozinho: carrega mais rápido, abre programas sem travar e responde com menos gargalos.</p>
+      <p>Na otimização, eu:</p>
+      <ul>
+        <li>Limpo programas e serviços inúteis que iniciam junto com o Windows.</li>
+        <li>Organizo a inicialização de programas para que o sistema não fique “pesado” logo no início.</li>
+        <li>Verifico e ajusto configurações de drivers e atualizações importantes para cada hardware.</li>
+      </ul>
+      <p>Assim, o PC se comporta melhor sozinho, mesmo depois de dias sem mexer.</p>
+    </section>
+
+    <section class="section">
+      <h2>Rapidez no computador</h2>
+      <p>Além de FPS, a <strong>rapidez geral do PC</strong> é prioridade. O objetivo é deixar o mouse mais responsivo, o abrir de programas mais rápido e o tempo de carregamento do sistema menor.</p>
+      <p>Na consulta, eu:</p>
+      <ul>
+        <li>Corrijo arquivos temporários e conflitos de software que deixam o sistema lento.</li>
+        <li>Ajusto configurações de virtualização e memória RAM para uso mais inteligente.</li>
+        <li>Verifico se há processos “escondidos” consumindo recursos à toa.</li>
+      </ul>
+      <p>Isso melhora tanto o desempenho em jogos quanto em programas de produtividade, como navegadores, editors e programas de trabalho.</p>
+    </section>
+
+    <section class="section">
+      <h2>Como funciona a consulta</h2>
+      <p>O atendimento é totalmente remoto e simples:</p>
+      <ol>
+        <li>Você agenda sua consulta por WhatsApp, Discord ou Instagram.</li>
+        <li>Eu te envio o link/ID do <strong>AnyDesk</strong> e você me autoriza o acesso ao seu PC.</li>
+        <li>Enquanto eu faço os ajustes, você pode acompanhar ou simplesmente deixar o sistema conosco.</li>
+        <li>Após a otimização, eu explico o que foi feito e dou dicas rápidas de uso diário.</li>
+      </ol>
+      <p>Tudo é feito com sua supervisão e sem mudanças desnecessárias.</p>
+    </section>
+
+    <section class="section">
+      <h2>Planos e preços</h2>
+      <p>Ofereço dois planos de otimização remota, escolha o que melhor atende você:</p>
+
+      <div class="pricing">
+        <div class="plan">
+          <h3>Plano Básico</h3>
+          <p class="price">R$ 25,00</p>
+          <ul>
+            <li>Limpeza rápida de programas e serviços iniciais.</li>
+            <li>Ajuste básico de configurações de energia e GPU.</li>
+            <li>Otimização focada em estabilidade geral, sem grandes mudanças.</li>
+          </ul>
+          <p>Ideal para quem quer um PC mais leve e estável, sem mexer em muitas configurações profissionais.</p>
+        </div>
+
+        <div class="plan">
+          <h3>Plano Melhor (Premium)</h3>
+          <p class="price">R$ 33,99</p>
+          <ul>
+            <li>Limpeza completa e ajuste profissional de serviços e inicializadores.</li>
+            <li>Configurações avançadas de FPS e desempenho para quem joga.</li>
+            <li>Revisão mais detalhada de drivers, programas e configurações de sistema.</li>
+          </ul>
+          <p>Recomendado para quem quer o máximo de desempenho e estabilidade no FPS e no uso geral do PC.</p>
+        </div>
+      </div>
+
+      <p class="fineprint">Os valores são por <strong>consulta única</strong>, realizada por AnyDesk, com duração aproximada de 30 a 60 minutos, dependendo da situação do computador.</p>
+    </section>
+
+    <section class="section">
+      <h2>Como contratar</h2>
+      <p>Para agendar seu CDZ Optimizer, escolha o plano e entre em contato por um desses canais:</p>
+
+      <div class="redes-sociais">
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="whatsapp">📱 Falar no WhatsApp</a>
+        <a href="https://discord.gg/SEU_LINK.CONVITE" target="_blank" class="discord">💬 Entrar no Discord</a>
+        <a href="https://www.instagram.com/seu_insta" target="_blank" class="instagram">📸 Instagram</a>
+      </div>
+
+      <p class="fineprint">
+        Ao clicar em qualquer botão, você será direcionado diretamente para o app/redesocial.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CDZ Optimizer – Serviço de otimização remota via AnyDesk.</p>
+    <p>Atendimento 100% online, sem formatação obrigatória.</p>
+  </footer>
+
+  <!-- Animação ao rolar a página -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
