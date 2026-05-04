@@ -27,77 +27,11 @@
       font-size: 1.1rem;
       opacity: 0.9;
     }
-
     main {
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
     }
-
-    /* Estilo da página inicial com links */
-    #home {
-      text-align: center;
-      padding: 2.5rem 1.5rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    #home h2 {
-      margin-top: 0;
-      color: #0f1a2e;
-      border-bottom: 2px solid #0f1a2e;
-      padding-bottom: 0.3rem;
-    }
-
-    .btn-link {
-      display: inline-block;
-      background: #e63946;
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0.5rem;
-    }
-
-    .btn-dono {
-      background: #0077b6;
-    }
-    .btn-cdz {
-      background: #0f1a2e;
-    }
-
-    /* Seção do "Conheça o Dono" */
-    #secao-dono {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    #secao-dono h2 {
-      margin-top: 0;
-      color: #0f1a2e;
-      border-bottom: 2px solid #0f1a2e;
-      padding-bottom: 0.3rem;
-    }
-
-    /* Seção "Conheça a CDZ Optimizer" */
-    #secao-cdz {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      background: #f0f8ff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    #secao-cdz h2 {
-      margin-top: 0;
-      color: #0f1a2e;
-      border-bottom: 2px solid #0f1a2e;
-      padding-bottom: 0.3rem;
-    }
-
-    /* Outras seções */
     .section {
       margin-bottom: 2rem;
       padding: 1.5rem;
@@ -105,6 +39,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
+      /* Animação de entrada */
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
@@ -119,7 +54,18 @@
       border-bottom: 2px solid #0f1a2e;
       padding-bottom: 0.3rem;
     }
-
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .feature {
+      flex: 1 1 200px;
+      padding: 1rem;
+      background: #f0f4f8;
+      border-radius: 6px;
+    }
     .pricing {
       display: flex;
       gap: 1.5rem;
@@ -148,31 +94,6 @@
       color: #666;
       margin-top: 1rem;
     }
-
-    .redes-sociais {
-      text-align: center;
-      margin: 1.5rem 0;
-    }
-    .redes-sociais a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      text-align: center;
-    }
-    .whatsapp {
-      background: #25d366;
-    }
-    .discord {
-      background: #7289da;
-    }
-    .instagram {
-      background: #e1306c;
-    }
-
     footer {
       text-align: center;
       padding: 2rem 0;
@@ -180,42 +101,26 @@
       color: #fff;
       margin-top: 2rem;
     }
+    .btn {
+      display: inline-block;
+      background: #e63946;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>CDZ Optimizer</h1>
     <p>Consulta remota para deixar seu PC estável, rápido e com melhor desempenho no FPS.</p>
   </header>
 
   <main>
-    <!-- Página inicial com links -->
-    <section id="home">
-      <h2>Bem‑vindo ao CDZ Optimizer</h2>
-      <p>Escolha abaixo para conhecer o dono do serviço ou a própria CDZ Optimizer.</p>
 
-      <a href="#secao-dono" class="btn-link btn-dono">Conheça o Dono (Marcos)</a>
-      <a href="#secao-cdz" class="btn-link btn-cdz">Conheça a CDZ Optimizer</a>
-    </section>
-
-    <!-- Seção Conheça o Dono -->
-    <section id="secao-dono" class="section">
-      <h2>Conheça o Dono</h2>
-      <p>Meu nome é <strong>Marcos</strong> e eu sou responsável pelo CDZ Optimizer. Moro em uma cidade pequena do Ceará e, além de estudar, tenho dedicado minhas horas ao aprofundamento em computadores e jogos competitivos.</p>
-      <p>Meu foco principal é entender o comportamento do PC em jogos, identificar gargalos e aplicar ajustes que deixam o sistema mais estável, rápido e eficiente. Com isso, posso melhorar o desempenho do FPS e da responsividade geral do computador sem precisar formatar ou instalar programas complexos.</p>
-      <p>Como <strong>Dono/Otimizador</strong> do CDZ Optimizer, meu compromisso é trazer resultados claros ao cliente, explicando o que foi feito e deixando o sistema mais consistente para o dia a dia.</p>
-    </section>
-
-    <!-- Seção Conheça a CDZ Optimizer -->
-    <section id="secao-cdz" class="section">
-      <h2>Conheça a CDZ Optimizer</h2>
-      <p>A <strong>CDZ Optimizer</strong> é um serviço de otimização remota voltado para quem busca mais estabilidade no FPS, melhor desempenho no jogo e maior rapidez no uso geral do PC.</p>
-      <p>Trabalho diretamente no computador da pessoa por meio do AnyDesk, ajustando configurações de energia, GPU, inicialização de programas e serviços em segundo plano, tudo com foco em manter o sistema leve e reativo.</p>
-      <p>Meu objetivo é oferecer uma solução simples, acessível e segura para quem quer aproveitar ao máximo o seu PC, sejam para jogos competitivos, estudo ou trabalho, sem precisar mexer em configurações avançadas sozinho.</p>
-    </section>
-
-    <!-- Seções principais -->
     <section class="section">
       <h2>O que é o CDZ Optimizer?</h2>
       <p>O <strong>CDZ Optimizer</strong> é um serviço de otimização rápida feito<strong> diretamente no seu computador</strong>, por meio de uma consulta remota via <strong>AnyDesk</strong>. Sem você precisar formatar ou instalar programas complexos, eu acesso seu PC de forma segura e aplico ajustes que deixam o sistema mais limpo, estável e rápido.</p>
@@ -262,7 +167,7 @@
       <h2>Como funciona a consulta</h2>
       <p>O atendimento é totalmente remoto e simples:</p>
       <ol>
-        <li>Você agenda sua consulta por WhatsApp, Discord ou Instagram.</li>
+        <li>Você entra em contato (WhatsApp, Discord, Instagram) e agenda sua consulta.</li>
         <li>Eu te envio o link/ID do <strong>AnyDesk</strong> e você me autoriza o acesso ao seu PC.</li>
         <li>Enquanto eu faço os ajustes, você pode acompanhar ou simplesmente deixar o sistema conosco.</li>
         <li>Após a otimização, eu explico o que foi feito e dou dicas rápidas de uso diário.</li>
@@ -303,18 +208,27 @@
 
     <section class="section">
       <h2>Como contratar</h2>
-      <p>Para agendar seu CDZ Optimizer, escolha o plano e entre em contato por um desses canais:</p>
+      <p>Para agendar seu CDZ Optimizer, escolha o plano (básico ou melhor) e entre em contato por um desses canais:</p>
 
-      <div class="redes-sociais">
-        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="whatsapp">📱 Falar no WhatsApp</a>
-        <a href="https://discord.gg/SEU_LINK.CONVITE" target="_blank" class="discord">💬 Entrar no Discord</a>
-        <a href="https://www.instagram.com/seu_insta" target="_blank" class="instagram">📸 Instagram</a>
+      <div style="text-align: center; margin: 1.5rem 0;">
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="btn" style="margin: 0.5rem; background: #25d366; color: #fff; text-decoration: none;">
+          📱 WhatsApp
+        </a>
+
+        <a href="https://discord.gg/SEU_LINK_CONVITE" target="_blank" class="btn" style="margin: 0.5rem; background: #7289da; color: #fff; text-decoration: none;">
+          💬 Entrar no Discord
+        </a>
+
+        <a href="https://www.instagram.com/seu_insta" target="_blank" class="btn" style="margin: 0.5rem; background: #e1306c; color: #fff; text-decoration: none;">
+          📸 Instagram
+        </a>
       </div>
 
       <p class="fineprint">
         Ao clicar em qualquer botão, você será direcionado diretamente para o app/redesocial.
       </p>
     </section>
+
   </main>
 
   <footer>
@@ -322,23 +236,25 @@
     <p>Atendimento 100% online, sem formatação obrigatória.</p>
   </footer>
 
-  <!-- Animação ao rolar a página -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const sections = document.querySelectorAll(".section");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
+    // Animação ao rolar a página
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
     });
   </script>
 </body>
